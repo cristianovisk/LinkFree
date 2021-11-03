@@ -2,14 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 :root {
     --bgColor: #F4EED4;
-    --accentColor: #E03A3E;
+    --accentColor: #553712;
     --hoverColor: #553712;
+    --rose: #E1BDA6;
     --font: 'Karla', sans-serif;
 }
 
 body{
-    background-color: var(--bgColor);
-    background-image: url("background.png");
+    /* background-color: var(--bgColor);
+    background-image: url("background.png"); */
+    background: linear-gradient(180deg, #ffffff 0%, #ffede2 20%, #f0d6c6 50%,  var(--rose) 100%) fixed;
+    
 }
 
 #userPhoto{
@@ -22,7 +25,7 @@ body{
 }
 
 #userName{
-    color: var(--bgColor);
+    color: var(--accentColor);
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.25;
@@ -31,7 +34,7 @@ body{
     width: 100%;
     text-align: center;
     text-decoration: none;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #009DDC;
+    text-shadow: 0 0 5px var(--rose);
 }
 
 #links{
@@ -42,20 +45,20 @@ body{
 }
 .link{
     display: block;
-    background-color: var(--bgColor);
-    color: var(--accentColor);
+    background-color: #ffffff;
+    border: 2px var(--bgColor);;
+    color: #dfb194;
     font-family: var(--font);
     text-align: center;
     margin-bottom: 20px;
     padding: 17px;
     text-decoration: none;
     font-size: 1rem;
-    transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    border: solid var(--hoverColor) 3px;
+    border-radius: 30px;
 }
 
 .link:hover{
-    background-color: var(--hoverColor);
+    background-color: var(--rose);
     color: var(--bgColor);
 }
 

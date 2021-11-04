@@ -28,6 +28,7 @@ body {
     --poppins: Poppins;
 
     --font_size_big: 30px;
+    --font_size_mid: 15px;
     --font_size_medium: 25;
 
 
@@ -51,7 +52,14 @@ body {
 h1 {
     font-size: var(--font_size_big);
     text-align: center;
-    padding: 3%;
+    padding: 1%;
+    color: var(--whiteColor);
+}
+
+h3 {
+    font-size: var(--font_size_mid);
+    text-align: center;
+    padding: 1%;
     color: var(--whiteColor);
 }
 
